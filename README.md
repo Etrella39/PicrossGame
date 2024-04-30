@@ -1,2 +1,2 @@
 # PicrossGame
-Java swing으로 네모로직
+Java Swing으로 네모로직
