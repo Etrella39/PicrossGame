@@ -7,7 +7,6 @@ class Main {
             createAndShowGUI();
         });
     }
-
     private static void createAndShowGUI() {
         PicrossFrame frame = new PicrossFrame("Picross Game");
         frame.setVisible(true);
