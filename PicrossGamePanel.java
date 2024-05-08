@@ -305,6 +305,7 @@ public class PicrossGamePanel extends JPanel {
       g.setFont(new Font("Arial", Font.BOLD, 19));
     else
       g.setFont(new Font("Arial", Font.BOLD, 25));
+
     for (int i = 0; i < StageArray.length / 2; i++) {
       int GAP_1 = 0;
       for (int j = 0; j < StageArray[i].length; j++) {
@@ -342,24 +343,22 @@ public class PicrossGamePanel extends JPanel {
             if (color_StageArray[StageArray[i].length * i + j] == 1) {
               g.setColor(new Color(255, 133, 202));
               if (StageArray[i][j] >= 10) {
-                L_GAP += 13;
+                L_GAP += 9;
               }
             } else {
               if (StageArray[i][j] >= 10) {
                 g.setColor(Color.BLUE);
-                L_GAP += 13;
+                L_GAP += 9;
               } else
                 g.setColor(Color.BLACK);
             }
-            g.drawString(Integer.toString(StageArray[i][j]), squares[STAGE_ROOM * a].x - L_GAP + GAP_1,
-                squares[STAGE_ROOM * a].y + SPAC / 2 + 7);
+            g.drawString(Integer.toString(StageArray[i][j]), squares[STAGE_ROOM * a].x - L_GAP + GAP_1, squares[STAGE_ROOM * a].y + SPAC / 2 + 7);
           } else {
             if (StageArray[i][j] >= 10) {
-              L_GAP += 13;
+              L_GAP += 9;
               g.setColor(Color.BLUE);
             }
-            g.drawString(Integer.toString(StageArray[i][j]), squares[STAGE_ROOM * a].x - L_GAP + GAP_1,
-                squares[STAGE_ROOM * a].y + SPAC / 2 + 7);
+            g.drawString(Integer.toString(StageArray[i][j]), squares[STAGE_ROOM * a].x - L_GAP + GAP_1, squares[STAGE_ROOM * a].y + SPAC / 2 + 7);
             g.setColor(Color.BLACK);
           }
         }
